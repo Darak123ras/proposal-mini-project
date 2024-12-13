@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ee8a8a; 
+}
+
+.love {
+    position: relative;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
+    max-width: 400px; 
+}
+.hurts{
+    position: absolute;
+    top: 70px;
+    left: 80px;
+}
+
+.love img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.love h2 {
+    font-size: 1.8rem; 
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.accept {
+    background-color: #28a745; 
+}
+
+.accept:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.reject {
+    background-color: #dc3545; 
+}
+
+.reject:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .love h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}

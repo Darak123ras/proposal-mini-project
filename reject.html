@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/like.png" type="image/x-icon">
+    <style>
+        
+
+        .love h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Button styles */
+        button {
+            position: relative;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .rej:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .acc:hover {
+            background-color: green;
+            color: white;
+        }
+
+        .rej,.acc{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="love">
+            <img src="https://tenor.com/en-GB/view/tkthao219-bubududu-tooji-gif-25233567.gif" alt="" width="185px" >
+            <h2>Are You <span style="color: red;">Really Really Sure</span>?</h2>
+            
+            <div class="btn">
+                <button class="rej" id="rej"><a href="./finalNo.html" id="yes" >Yes</a></button>
+                <button class="acc"><a href="./again.html" id="no" >No</a></button>
+            </div>       
+        </div>
+    </div>
+    <script src="./script.js" charset="UTF-8"></script>
+</body>
+</html>
